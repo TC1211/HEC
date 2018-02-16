@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/profile_image_set"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:contentDescription="@string/profile_image"
+        app:layout_constraintBottom_toTopOf="@id/profile_guideline_50"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.50"
+        app:srcCompat="@drawable/avatar" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/profile_guideline_50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+
+    <Button
+        android:id="@+id/profile_facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@id/profile_guideline_60"
+        app:layout_constraintEnd_toStartOf="@+id/profile_inMail"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile_guideline_50" />
+
+    <Button
+        android:id="@+id/profile_inMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@id/profile_guideline_60"
+        app:layout_constraintEnd_toStartOf="@+id/profile_linkedIn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/profile_facebook"
+        app:layout_constraintTop_toBottomOf="@id/profile_guideline_50" />
+
+    <Button
+        android:id="@+id/profile_linkedIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@id/profile_guideline_60"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toEndOf="@+id/profile_inMail"
+        app:layout_constraintTop_toBottomOf="@id/profile_guideline_50" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/profile_guideline_60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.60" />
+
+    <TextView
+        android:id="@+id/profile_description"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Nice description of who I am. smiley."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile_guideline_60" />
+
+
+</android.support.constraint.ConstraintLayout>
