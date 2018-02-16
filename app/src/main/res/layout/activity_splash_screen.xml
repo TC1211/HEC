@@ -4,14 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context="com.example.tianchan.hec.SplashScreen">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/splashImage"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:srcCompat="@drawable/splash_screen"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="105dp" />
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.50"
+        android:contentDescription = "@string/splash_screen"
+        app:srcCompat="@drawable/splash_screen"/>
 
 </android.support.constraint.ConstraintLayout>
